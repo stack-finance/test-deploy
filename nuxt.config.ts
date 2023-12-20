@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
-    baseUrl: 'https://test-deploy-seven-beta.vercel.app',
+    baseURL: 'https://test-deploy-seven-beta.vercel.app',
   },
   router: {
 		options: {
