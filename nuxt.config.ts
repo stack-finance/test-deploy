@@ -16,10 +16,10 @@ export default defineNuxtConfig({
 			pathPrefix: false
 		}
 	],
-  nitro: {
-		compressPublicAssets: {
-			gzip: true,
-			brotli: true,
-		},
-	},
+  // nitro: {
+	// 	compressPublicAssets: {
+	// 		gzip: true,
+	// 		brotli: true,
+	// 	},
+	// },
 })
