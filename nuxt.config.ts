@@ -50,9 +50,9 @@ export default defineNuxtConfig({
 	},
 	sitemap: {
 		sources: [
-			'/api/__sitemap__/blogs',
-			'/api/__sitemap__/faqs',
-			'/api/__sitemap__/opportunities',
+			// '/api/__sitemap__/blogs',
+			// '/api/__sitemap__/faqs',
+			// '/api/__sitemap__/opportunities',
 			'/api/__sitemap__/calculators',
 		]
 	}
