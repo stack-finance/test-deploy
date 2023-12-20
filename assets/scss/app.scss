@@ -1,0 +1,249 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+//@import '../../node_modules/bootstrap-vue/src/index.scss';
+@import './components/index';
+@import './helpers/index';
+@import './pages/index';
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy"),
+  url(../fonts/Gilroy-Regular.otf) format("opentype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy"),
+  url(../fonts/Gilroy-Medium.otf) format("opentype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy"),
+  url(../fonts/Gilroy-SemiBold.otf) format("opentype");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy"),
+  url(../fonts/Gilroy-Bold.otf) format("opentype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@-moz-document url-prefix() {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  //overflow-x: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-family: 'Gilroy', sans-serif;
+  font-display: swap;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: $primary-color;
+}
+
+::selection {
+  color: white;
+  background: $primary-color;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: $text-color;
+}
+
+.section-heading {
+  color: $text-color;
+  font-weight: bold;
+  font-size: 24px;
+  max-width: 250px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 450px;
+    font-size: 48px;
+  }
+}
+
+.section-subtext {
+  color: $text-color;
+  font-size: 18px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.colored-text {
+  color: $primary-color;
+
+  &:hover, &:visited {
+    color: $primary-color;
+  }
+}
+
+.footer-wrapper {
+  padding: 0 16px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 64px;
+  }
+}
+
+.scale-enter-active,
+.scale-leave-active {
+  transition: transform .3s;
+}
+
+.scale-enter,
+.scale-leave-to {
+  transform: scale(0);
+}
+
+.app-toast {
+  left: 50%;
+  bottom: 0;
+  color: white;
+  display: flex;
+  z-index: 99999;
+  position: fixed;
+  min-height: 55px;
+  max-width: 450px;
+  min-width: 300px;
+  padding: 8px 16px;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 6px 5px rgba(0, 0, 0, 0.16);
+  background-color: $primary-color;
+  transform: translateX(-50%) translateY(100px);
+
+}
+
+.subscribe {
+  display: inline-flex;
+  background-color: $silver-lt;
+  border-radius: 12px;
+  padding: 2px;
+  width: 100%;
+
+  .subs-input {
+    background-color: transparent;
+    border: none;
+    padding: 8px 16px;
+    width: 100%;
+    font-weight: 600;
+
+    @media screen and (min-width: 768px) {
+      min-width: 300px;
+    }
+  }
+
+  .btn-arrow {
+    box-shadow: none;
+    background-color: $text-color;
+    color: white;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+.feature-option {
+  padding: 0 24px 48px;
+  @extend .px-sm-128;
+  @extend .py-sm-128;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  &__row {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .option-head {
+      color: #FFF;
+      font-weight: 600;
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 24px;
+
+      @media screen and (min-width: 768px) {
+        font-size: 48px;
+        text-align: left;
+      }
+    }
+
+    .option-para {
+      color: $text-color-lt;
+      text-align: center;
+
+      @media screen and (min-width: 768px) {
+        text-align: left;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.bdr-t {
+  border-top: 1px solid #202020;
+}
+
+.bdr-b {
+  border-bottom: 1px solid #202020;
+}
+
+.page-breadcrumbs {
+  background-color: transparent !important;
+  padding: 0;
+
+  .breadcrumb-item {
+    font-size: 12px;
+    font-weight: 500;
+
+    > a {
+      color: $text-color-lt;
+    }
+
+    &.active {
+      color: #FFF;
+    }
+  }
+}

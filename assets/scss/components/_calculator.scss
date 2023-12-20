@@ -1,0 +1,69 @@
+@import '../helpers/variables';
+
+.calc-grid {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: 1fr;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 0.4fr;
+  }
+}
+
+.indicator-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.input-grp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .calc-input {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    max-width: 90px;
+    box-shadow: 0 2px $border-dark-color;
+
+    option {
+      background-color: $text-color;
+    }
+
+    // Remove spin buttons for WebKit browsers (e.g., Chrome, Safari)
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &[type='number'] {
+      // Remove spin buttons for Firefox
+      -moz-appearance: textfield;
+
+      // Remove clear button for IE
+      &::-ms-clear {
+        display: none;
+      }
+    }
+  }
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 4px;
+  outline: none;
+}

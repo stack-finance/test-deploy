@@ -1,0 +1,46 @@
+@import "variables";
+
+.content-section {
+  max-width: 550px;
+
+  &-head {
+    font-size: 36px;
+    font-weight: bold;
+    color: $text-color;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 32px;
+
+    .colored {
+      color: $orange;
+    }
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      font-size: 54px;
+      margin-top: 0;
+      margin-bottom: 32px;
+    }
+  }
+
+  &-subtext {
+    font-size: 16px;
+    color: $text-color-lt;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      font-size: 24px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      justify-content: flex-start;
+    }
+  }
+}

@@ -1,0 +1,349 @@
+@import 'variables';
+
+.w-sm-90 {
+  @media screen and (min-width: 768px) {
+    width: 90%;
+  }
+}
+
+.w-60 {
+  width: 60%;
+}
+.w-40 {
+  width: 40%;
+}
+
+.mr-120 {
+  margin-right: 120px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.mt-sm-80 {
+  margin-top: 0;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 80px !important;
+  }
+}
+
+.mt-sm-128 {
+  margin-top: 0;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 128px !important;
+  }
+}
+
+.py-128 {
+  padding-top: 128px !important;
+  padding-bottom: 128px !important;
+}
+
+.px-sm-128 {
+  @media screen and (min-width: 768px) {
+    padding-left: 128px !important;
+    padding-right: 128px !important;
+  }
+}
+
+.p-sm-32 {
+  @media screen and (min-width: 768px) {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
+}
+
+.py-sm-128 {
+  @media screen and (min-width: 768px) {
+    padding-top: 128px !important;
+    padding-bottom: 128px !important;
+  }
+}
+
+.py-sm-80 {
+  @media screen and (min-width: 768px) {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+}
+
+.pb-sm-128 {
+  @media screen and (min-width: 768px) {
+    padding-bottom: 128px !important;
+  }
+}
+
+.w-sm-75 {
+  @media screen and (min-width: 768px) {
+    width: 75% !important;
+  }
+}
+
+.app-bg-dark {
+  background-color: $text-color;
+}
+
+.bg-dark-gray {
+  background-color: $dark-color;
+}
+
+.flex-grow-3 {
+  flex-grow: 3 !important;
+}
+
+.text-color {
+  color: $text-color;
+}
+
+.bg-border-color {
+  background-color: #303030;
+}
+
+.text-golden {
+  color: $golden;
+}
+
+.bgi-none {
+  background-image: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.op-7 {
+  opacity: 0.7;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.text-color-lt {
+  color: $text-color-lt !important;
+}
+
+.text-color-primary {
+  color: $primary-color !important;
+}
+
+.primary-bg {
+  background-color: $primary-color !important;
+}
+
+.app-border {
+  border: 1px solid $border-dark-color;
+}
+
+// Fonts
+
+.fo-link {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Gilroy', sans-serif;
+  color: #ffffff;
+
+  &:hover {
+    color: $text-color-lt;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: #ffffff;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: $link;
+  }
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.mxw-400 {
+  max-width: 400px;
+}
+
+.mxw-500 {
+  max-width: 500px;
+}
+
+.mxw-200 {
+  max-width: 200px;
+}
+
+.mxw-260 {
+  max-width: 260px;
+}
+
+.fo-10 {
+  font-size: 10px;
+}
+
+.fo-18 {
+  font-size: 18px;
+}
+
+.fo-24 {
+  font-size: 24px;
+}
+
+.fo-32 {
+  font-size: 32px;
+}
+
+.fo-sm-32 {
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+  }
+}
+.fo-sm-40 {
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+  }
+}
+
+.fo-sm-48 {
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+}
+
+.fo-sm-16 {
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.fo-sm-56 {
+  @media screen and (min-width: 768px) {
+    font-size: 56px;
+  }
+}
+
+.fo-16 {
+  font-size: 16px !important;
+}
+
+.fo-56 {
+  font-size: 56px;
+}
+
+.fo-14 {
+  font-size: 14px;
+}
+
+.fo-12 {
+  font-size: 12px;
+}
+
+.fo-sm-18 {
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.fo-sm-20 {
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.fo-sm-24 {
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.text-dull-white {
+  color: $text-color-lt;
+}
+
+.mxw-600 {
+  max-width: 600px;
+}
+
+.mxw-750 {
+  max-width: 750px;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.mxw-900 {
+  max-width: 900px;
+  height: auto;
+}
+
+.mxh-450 {
+  max-height: 450px;
+}
+
+.mxh-400 {
+  max-height: 400px;
+}
+
+.mxh-520 {
+  max-height: 520px;
+}
+
+.mxh-610 {
+  max-height: 610px;
+}
+
+.align-items-baseline {
+  align-items: baseline;
+}
+
+.br-8 {
+  border-radius: 8px;
+}
+
+.br-12 {
+  border-radius: 12px;
+}
+
+.br-20 {
+  border-radius: 20px;
+}
+
+.br-50 {
+  border-radius: 50px;
+}
+
+.app-card-shadow {
+  box-shadow: 0 80px 120px 0 #000;
+}
+
+.of-cover {
+  object-fit: cover;
+}
+
+.rotate-z-90n {
+  transform: rotateZ(-90deg);
+}
+
+.rotate-z-90 {
+  transform: rotateZ(90deg);
+}
+
+.rotate-z-180 {
+  transform: rotateZ(-180deg);
+}
+
+.z-2 {
+  z-index: 2;
+}

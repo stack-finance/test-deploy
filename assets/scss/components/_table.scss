@@ -1,0 +1,41 @@
+@import '../helpers/variables';
+
+.facts-table {
+  max-width: 400px;
+  overflow-x: auto;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+  }
+
+  &__row {
+    display: flex;
+    border-bottom: 1px solid $gray;
+
+    &:nth-child(2n) {
+      background-color: $gray;
+    }
+
+    &.table-head {
+      background-color: rgba(109, 100, 216, .12);
+    }
+
+    .row-cell {
+      flex: 1;
+      color: #FFF;
+      border-left: 1px solid #303030;
+      padding: 8px;
+      min-width: 200px;
+
+      @media screen and (min-width: 768px) {
+        padding: 24px 16px;
+      }
+
+      &--prop {
+        color: $text-color-lt;
+        max-width: 240px;
+      }
+    }
+  }
+}

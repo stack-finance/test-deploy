@@ -1,0 +1,68 @@
+@import '../helpers/variables';
+
+.app-radio {
+  display: flex;
+  margin: 16px 0;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 8px 16px;
+  border: 1px solid $border-dark-color;
+  background-color: $dark-color;
+  color: $text-color-lt;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 2px 4px 5px rgba(0, 0, 0, 0.12);
+  transition: 0.2s ease-in-out;
+
+  &:hover, &.selected  {
+    border: 1px solid $primary-color;
+    color: white;
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* The slider */
+.slide {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #585858;  // <-- Off state color for the box
+  transition: .4s;
+  border-radius: 20px;  // <-- Adjusted for decreased size
+}
+.slide:before {
+  position: absolute;
+  content: '';
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: $text-color-lt;  // <-- Off state color for the circle
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);  // <-- Shadow for the circle
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slide {
+  background-color: #ffffff;  // <-- On state color for the box
+}
+input:checked + .slide:before {
+  transform: translateX(16px);  // <-- Adjusted for decreased size
+  background-color: $primary-color;  // <-- On state color for the circle
+}
