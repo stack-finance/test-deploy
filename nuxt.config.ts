@@ -7,4 +7,21 @@ export default defineNuxtConfig({
 		}
 	},
 	pages: true,
+  components: [
+		{
+			path: '~/components',
+			pathPrefix: false
+		}
+	],
+  nitro: {
+		prerender: {
+			// failOnError: false,
+			crawlLinks: true,
+			routes: ['/', '/sitemap.xml']
+		},
+		compressPublicAssets: {
+			gzip: true,
+			brotli: true,
+		},
+	},
 })
