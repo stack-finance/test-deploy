@@ -44,10 +44,10 @@ export default defineNuxtConfig({
 			crawlLinks: true,
 			routes: ['/', '/sitemap.xml']
 		},
-		// compressPublicAssets: {
-		// 	gzip: true,
-		// 	brotli: true,
-		// },
+		compressPublicAssets: {
+			gzip: true,
+			brotli: true,
+		},
 	},
 	sitemap: {
 		sources: [
